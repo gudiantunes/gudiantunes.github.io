@@ -1,8 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --color-bg: #012E40;
+    --color-bg2: #025159;
+    --color-o1: #038C8C;
+    --color-o2: #03A696;
+    --color-spe: #F28705;
+
+    --font-main: 'Poppins', sans-serif;
+    --font-other: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: var(--font-main);
+}
+
 body {
-    background-color: skyblue;
+    background-color: var(--color-bg);
+    padding: 10px;
 }
 
 main {
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--color-bg2);
+    max-width: 1000px;
+    min-width: 650px;
+    height: 97vh;
+}
+
+section#perfil {
+    background-color: var(--color-o1);
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#profile-picture > img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+section#content {
+    /* background-color: var(--color-o2); */
+    margin: 15px 0px 15px 15px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+section#content > h1 {
+    font-size: max(min(5vw, 4.5em), 2.4em);
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#menu {
+    background-color: var(--color-o1);
+    padding: 10px 7px;
+    border-radius: 7px;
+}
+
+#menu > a {
+    text-decoration: none;
     background-color: white;
-    width: 800px;
+    color: black;
+    font-family: var(--font-other);
+    font-weight: bold;
+    padding: 5px 7px;
+    margin: 4px 5px;
+    border-radius: 5px;
+}
+
+#menu > a:hover {
+    background-color: var(--color-spe);
+    color: white;
 }

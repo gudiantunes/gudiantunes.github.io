@@ -28,7 +28,7 @@ main {
     margin: auto;
     border-radius: 10px;
     background-color: var(--color-bg2);
-    max-width: max(1000px, 52vw);
+    max-width: 52vw;
     /* min-width: 700px; */
     height: 97vh;
 }

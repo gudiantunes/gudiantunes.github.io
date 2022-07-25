@@ -28,8 +28,8 @@ main {
     margin: auto;
     border-radius: 10px;
     background-color: var(--color-bg2);
-    max-width: 1000px;
-    min-width: 650px;
+    max-width: 52vw;
+    /* min-width: 700px; */
     height: 97vh;
 }
 
@@ -79,7 +79,7 @@ section#content > h1 {
     border-radius: 5px;
 }
 
-#menu > a:hover {
+#menu > a:hover, #menu >a.sct-active {
     background-color: var(--color-spe);
     color: white;
 }
